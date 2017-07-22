@@ -2,7 +2,6 @@ package globals
 
 import (
 	"time"
-	"github.com/xrcms/globals"
 )
 
 type Comment struct {
@@ -22,6 +21,6 @@ type Commentser interface {
 	GetList(page, limit int64, where, orderBy string, onlyActive bool) (comments []Comment, count int64)
 	Get(commentID int64) Comment
 	PrepareComment(row map[string]string) Comment
-	Save(comment Comment, user globals.User) (int64, error)
+	Save(comment Comment, user User) (int64, error)
 	Delete(commentID int64) error
 }
