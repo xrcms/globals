@@ -39,3 +39,12 @@ type Element struct {
 	PriceMin        float64
 	PriceMax        float64
 }
+
+type Elementser interface {
+	GetByID(elementID int64) (element Element)
+	GetByCode(code string) (element Element)
+	GetList(page, limit int64, where, orderBy string, onlyActive bool) (elements []Element, count int64)
+	PrepareElement(row map[string]string) Element
+	Save(element Element, user User) (int64, error)
+	Delete(elementID int64) error
+}

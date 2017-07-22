@@ -20,3 +20,13 @@ type Category struct {
 	UpdatedAt time.Time
 	CreatedAt time.Time
 }
+
+type Categorieser interface {
+	GetByID(categoryID int64) Category
+	GetByCode(code string) Category
+	GetList() []Category
+	Clear()
+	PrepareCategory(row map[string]string) Category
+	Save(category Category) (int64, error)
+	Delete(categoryID int64) error
+}
