@@ -3,11 +3,11 @@ package globals
 import "database/sql"
 
 type DBField struct {
-	NAME    string
-	TYPE    string
-	NOTNULL bool
-	HASDEF  bool
-	NUM     int
+	Name    string
+	Type    string
+	NotNull bool
+	HasDef  bool
+	Num     int
 }
 
 type DataBaseResulter interface {
