@@ -1,6 +1,9 @@
 package globals
 
 const (
+	// Урл сайта CMS
+	XR_DOMAIN = "xr-cms.ru"
+
 	// CONFIGURATION_PATH Путь к файлу настроек
 	CONFIGURATION_PATH = "/etc/xrcms.conf"
 	// GROUP_ADMINS_ID Группа администраторов
