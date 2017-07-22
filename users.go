@@ -1,6 +1,8 @@
 package globals
 
-import "time"
+import (
+	"time"
+)
 
 type User struct {
 	ID             int64
@@ -33,4 +35,17 @@ type User struct {
 	About          string
 	UpdatedAt      time.Time
 	CreatedAt      time.Time
+}
+
+type Userser interface {
+	Get(userID int64) User
+	GetBySocID(socKey, socID string) User
+	GetByUsername(username string) User
+	GetByEmail(email string) User
+	Save(user User) (int64, error)
+	GetList(page, limit int64, where, orderBy string) (users []User, count int64)
+	Clear(userID int64)
+	PrepareUser(row map[string]string) User
+	Delete(userID int64) error
+	PasswordHash(password string) string
 }
