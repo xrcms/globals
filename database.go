@@ -10,20 +10,12 @@ type DBField struct {
 	Num     int
 }
 
-type DataBaseResulter interface {
-	GetLastInsertID() int64
-	FetchRow() map[string]string
-	Fetch() bool
-	Row() map[string]string
-	Free()
-}
-
 type DataBaser interface {
 	DBName() string
 	Close()
 	Native() *sql.DB
 	Connect() error
-	Query(query string) DataBaseResulter
+	Query(query string) *DataBaseResult
 	Get(selectQuery string) []map[string]string
 	InsertOnDublicateUpdate(tableName, where string, data map[string]interface{}) (int64, error)
 	DeferInsert(tableName string, data map[string]interface{}, max int)
