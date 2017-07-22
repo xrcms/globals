@@ -5,6 +5,7 @@ type Author struct {
 	Email string `json:"email"`
 	Site string `json:"site"`
 }
+
 type Manifest struct {
 	Name string `json:"name"`
 	Icon string `json:"icon"`
