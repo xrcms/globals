@@ -16,6 +16,7 @@ type Page struct {
 	Template       string
 	TemplateFile   string
 	ContentType    string
+	AddHttpHeaders map[string]string
 	PermissionCode string
 	HttpCode       int
 	System         bool
