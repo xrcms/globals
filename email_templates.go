@@ -3,13 +3,13 @@ package globals
 import "time"
 
 type EmailTemplate struct {
-	ID          int64
-	Name        string
-	Subject     string
-	Body        string
-	System      bool
-	UpdatedAt   time.Time
-	CreatedAt   time.Time
+	ID        int64
+	Name      string
+	Subject   string
+	Body      string
+	System    bool
+	UpdatedAt time.Time
+	CreatedAt time.Time
 }
 
 type EmailTemplateser interface {

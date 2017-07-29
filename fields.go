@@ -1,7 +1,7 @@
 package globals
 
 type FieldOption struct {
-	Key string
+	Key   string
 	Value string
 }
 

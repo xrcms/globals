@@ -32,12 +32,12 @@ type Element struct {
 	CreatedAt       time.Time
 
 	// Значения для инфоблоков товаров
-	Offers          []int64
-	OffersList      []Element
-	Quantity        int64
-	Price           float64
-	PriceMin        float64
-	PriceMax        float64
+	Offers     []int64
+	OffersList []Element
+	Quantity   int64
+	Price      float64
+	PriceMin   float64
+	PriceMax   float64
 }
 
 type Elementser interface {

@@ -12,7 +12,7 @@ type Page struct {
 	SeoTitle       string
 	SeoKeywords    string
 	SeoDescription string
-	Content        string
+	Content        []byte
 	Template       string
 	TemplateFile   string
 	ContentType    string

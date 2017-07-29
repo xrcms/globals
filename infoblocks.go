@@ -25,7 +25,6 @@ type Infoblock struct {
 	IsOffers        bool
 }
 
-
 type Infoblocker interface {
 	GetList() []Infoblock
 	Get(infoblockID int64) Infoblock
