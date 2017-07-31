@@ -5,4 +5,5 @@ type Sessioner interface {
 	Auth(username, password string, remember bool) bool
 	User() User
 	IsAuth() bool
+	IsMobile() bool
 }
