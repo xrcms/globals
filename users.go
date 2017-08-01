@@ -48,5 +48,5 @@ type Userser interface {
 	Clear(userID int64)
 	PrepareUser(row map[string]string) User
 	Delete(userID int64) error
-	PasswordHash(password string) string
+	PasswordHashAndSalt(password string, userID int64) (hash, salt string)
 }
