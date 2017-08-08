@@ -32,7 +32,6 @@ type User struct {
 	GoogleID       string
 	FacebookID     string
 	GithubID       string
-	CityID         int64
 	About          string
 	UpdatedAt      time.Time
 	CreatedAt      time.Time
