@@ -8,6 +8,7 @@ type Outputer interface {
 	GetPage() Page
 	SetParams(params map[string]string)
 	GetParams() map[string]string
+	ModuleParamOrRequestValue(paramName, defaultValue string) string
 	ModuleParam(paramName, defaultValue string) string
 	SetVar(key string, value interface{})
 	GetVar(key string) interface{}
