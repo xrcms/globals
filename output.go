@@ -19,4 +19,5 @@ type Outputer interface {
 	GetScripts() []string
 	AddCSS(pathOrCode string)
 	GetStyles() []string
+	LocalRedirect(url string)
 }
