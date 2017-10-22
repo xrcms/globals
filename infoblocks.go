@@ -16,6 +16,7 @@ type Infoblock struct {
 	ListPageURL     string
 	CategoryPageURL string
 	DetailPageURL   string
+	Sort            int
 	UpdatedAt       time.Time
 	CreatedAt       time.Time
 	Elements        Elementser
