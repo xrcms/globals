@@ -47,7 +47,7 @@ type Field struct {
 	RegionID        int64 `json:"region_id"`
 }
 
-type Fields interface {
-	StringsToField(params []string) Field
+type Fieldser interface {
+	StringsToField(params []string) Field 
 	Build(field Field, db DataBaser, out Outputer, options Optionser, files Fileser) string
 }
