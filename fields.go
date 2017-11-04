@@ -46,3 +46,8 @@ type Field struct {
 	CountryID       int64 `json:"country_id"`
 	RegionID        int64 `json:"region_id"`
 }
+
+type Fields interface {
+	StringsToField(params []string) Field
+	Build(field Field, db DataBaser, out Outputer, options Optionser, files Fileser) string
+}
