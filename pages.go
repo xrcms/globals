@@ -20,6 +20,7 @@ type Page struct {
 	PermissionCode string
 	HttpCode       int
 	System         bool
+	GZIP           bool
 	UpdatedAt      time.Time
 	CreatedAt      time.Time
 }

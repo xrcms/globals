@@ -48,6 +48,6 @@ type Field struct {
 }
 
 type Fieldser interface {
-	StringsToField(params []string) Field 
+	StringsToField(params []string) Field
 	Build(field Field, db DataBaser, out Outputer, options Optionser, files Fileser) string
 }
