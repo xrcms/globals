@@ -12,7 +12,7 @@ type Directory struct {
 	Sort            int
 	UpdatedAt       time.Time
 	CreatedAt       time.Time
-	Elements        Elementser
+	Items           DirectoryItemer
 }
 
 type Directoryer interface {
