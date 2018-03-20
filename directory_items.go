@@ -16,7 +16,7 @@ type DirectoryItem struct {
 type DirectoryItemer interface {
 	GetByID(itemID int64) (item DirectoryItem)
 	GetList(page, limit int64, where, orderBy string) (item []DirectoryItem, count int64)
-	PrepareItem(row map[string]string, userFields map[string][]string) DirectoryItem
+	PrepareElement(row map[string]string, userFields map[string][]string) DirectoryItem
 	Save(item DirectoryItem, user User) (int64, error)
 	Delete(itemID int64) error
 }
