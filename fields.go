@@ -45,6 +45,7 @@ type Field struct {
 	EditorTheme     string `json:"editor_theme"`
 	CountryID       int64 `json:"country_id"`
 	RegionID        int64 `json:"region_id"`
+	DirectoryID     int64 `json:"directory_id"`
 }
 
 type Fieldser interface {
