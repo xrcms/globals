@@ -16,6 +16,8 @@ const (
 	MENU_INFOBLOCK_ITEM_ID = 9
 	// MENU_MODULES_ITEM_ID ID пункта меню модулей
 	MENU_MODULES_ITEM_ID = 4
+	// MENU_DIRECTORY_ITEM_ID ID пункта меню справочников
+	MENU_DIRECTORY_ITEM_ID = 14
 	// EMAIL_CONFIRMATION_ID ID шаблона письма подтверждения E-Mail
 	EMAIL_CONFIRMATION_ID = 1
 	// EMAIL_RESTORE_PASSWORD_ID ID шаблона письма восстановления пароля
