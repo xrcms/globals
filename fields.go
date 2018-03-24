@@ -1,5 +1,7 @@
 package globals
 
+import "github.com/xrcms/globals"
+
 type FieldOption struct {
 	Key   string
 	Value string
@@ -50,5 +52,5 @@ type Field struct {
 
 type Fieldser interface {
 	StringsToField(params []string) Field
-	Build(field Field, db DataBaser, out Outputer, options Optionser, files Fileser) string
+	Build(field Field, db DataBaser, out Outputer, options Optionser, files Fileser, directory Directoryer) string
 }
