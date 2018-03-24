@@ -1,7 +1,5 @@
 package globals
 
-import "github.com/xrcms/globals"
-
 type FieldOption struct {
 	Key   string
 	Value string
